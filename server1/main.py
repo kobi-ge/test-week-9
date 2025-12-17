@@ -12,7 +12,7 @@ class Item(BaseModel):
 
 def create_shopping_list():
     with open("db/shopping_list.json", "w") as f:
-        f.write("[]")
+        json.dump("[]")
 create_shopping_list()
 
 DB_PATH = Path("db/shopping_list.json")

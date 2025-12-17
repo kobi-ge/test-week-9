@@ -1,6 +1,6 @@
 FROM python:3.11-slim
 
-WORKDIR /server1
+WORKDIR /app
 
 COPY requirements.txt .
 
